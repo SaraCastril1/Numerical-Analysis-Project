@@ -1,0 +1,100 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@1,500&family=Tangerine:wght@700&display=swap');
+
+nav {
+  position: relative; 
+  background-color: #fff; 
+  overflow: hidden;
+  padding-bottom: 1.5%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  z-index: 30;
+
+  > .burger{
+    margin: 3% ;
+    margin-right: 3%;
+  }
+
+  > img {
+    width: 3%;
+    height: 2%;
+    margin-top: 1%;
+
+  }
+
+  > span{
+    font-family: 'Oswald', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+  }
+
+
+}
+
+main{
+  display: flex;
+  height: 100vh;
+  
+
+  aside{
+    position: relative; 
+    background-color: #fff;
+    width: 20%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+
+
+   
+
+    > a {
+      text-decoration: none; 
+
+      > div {
+        padding: 7%;
+      }
+
+      > div:hover {
+        text-decoration: underline; 
+        background-color: #EBE7F8;
+      }
+    }
+  
+  }
+
+
+  > section{
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #EF6F80, #FEDA6B, #00E0FF);
+    justify-content: center;
+    align-items: center;
+
+    > div{
+      background-color: #fff;
+      padding: 5%;
+      border:black dotted;
+      position: relative;
+
+      > img {
+        position: absolute;
+        transform: scaleX(-1);
+        width: 10%;
+        height: 20%;
+        bottom: -1;
+        right: 0;
+        
+      }
+      
+    }
+
+    
+    
+  }
+
+}
+
+
+
+
+
+
+
+
