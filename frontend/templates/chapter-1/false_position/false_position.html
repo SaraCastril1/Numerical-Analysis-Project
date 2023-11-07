@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerical Analysis</title>
+    <link rel="stylesheet" href="../../../static/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/favicon.ico" >
+    
+</head>
+<body>
+
+    <nav>
+
+      <a class="burger" href="../../home.html">
+        <svg class="icon-bu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path>
+        </svg>
+      </a>
+
+      <img src="../../../img/favicon.ico" alt="logo rubik" width="50" height="50" viewBox="0 0 50 50">
+      <span>NumericalAnalysis</span>
+
+      
+    </nav>
+
+    <main>
+
+      <aside  class="methods-aside">
+
+
+        <h1>False Position</h1>
+            <form onsubmit="submitForm(event); return false;" id="false_position_form">
+
+                <label for="function">Function: </label>
+                <br>
+                <input id="function" name="function" type="text" placeholder="Function" required/>
+                <br />
+                <br />
+
+                
+                <div>
+                    <label for="lower-interval">a: </label>
+                    <br>
+                    <input type="number" id="a" name="a"  placeholder="Lower interval value"  required />
+                    <br />
+                    <br>
+        
+                    <label for="higher-interval">b:</label>
+                    <br>
+                    <input type="number" id="b" name="b"  placeholder="Higher interval value" required />
+                    <br />
+                    <br>
+                </div>
+                
+                <label for="tolerance">Tolerance: </label>
+                <br>
+                <input type="float" id="tolerance" name="tolerance"   placeholder="Tolerance"  required />
+                <br />
+                <br>
+
+                <label for="nitter">Nitter: </label>
+                <br>
+                <input type="number" id="nitter" name="nitter"  placeholder="Maximum of iterations"  required />
+                <br />
+                <br>
+                <br>
+
+                
+
+                <input type="submit" id="btn_save" value="Calculate" />
+            </form>
+            
+  
+      </aside>
+
+
+      <section>
+        <div id="false_positions_results">
+
+          
+        </div>
+        
+      </section>
+
+
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./false_position.js"></script>
+
+
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+

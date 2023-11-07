@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@1,500&family=Tangerine:wght@700&display=swap");
 nav {
   position: relative;
+  display: flex;
   background-color: #fff;
   overflow: hidden;
   padding-bottom: 1.5%;
@@ -9,17 +10,23 @@ nav {
   z-index: 30;
 }
 nav > .burger {
-  margin: 3%;
-  margin-right: 3%;
+  margin: 2.5% 2.5% 1% 2.5%;
 }
 nav > img {
-  width: 3%;
-  height: 2%;
-  margin-top: 1%;
+  align-self: center;
 }
 nav > span {
+  align-self: end;
+  margin-left: 0.5%;
+  margin-bottom: 1%;
   font-family: "Oswald", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 2rem;
+}
+nav > div {
+  margin-left: 10%;
+  align-self: end;
+  justify-self: flex-end;
+  margin-bottom: 1%;
 }
 
 main {
@@ -50,19 +57,48 @@ main > section {
   justify-content: center;
   align-items: center;
 }
-main > section > div {
-  background-color: #fff;
+main > section > div.intro {
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 5%;
-  border: black dotted;
+  border: #EF6F80 dotted;
   position: relative;
 }
-main > section > div > img {
+main > section > div.intro > img {
   position: absolute;
   transform: scaleX(-1);
   width: 10%;
   height: 20%;
   bottom: -1;
   right: 0;
+}
+main > section > div.methods {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  padding: 5%;
+  border: #EF6F80 dotted;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+main > section > div.methods > div > a {
+  text-decoration: none;
+}
+main > section > div.methods > div > a > div {
+  padding: 3%;
+}
+main > section > div.methods > div > a > div:hover {
+  text-decoration: underline;
+  background-color: #EBE7F8;
+}
+main > section > div.methods > a {
+  text-decoration: none;
+}
+main > section > div.methods > a > div {
+  padding: 7%;
+}
+main > section > div.methods > a > div:hover {
+  text-decoration: underline;
+  background-color: #EBE7F8;
 }
 
 /*# sourceMappingURL=style.css.map */
