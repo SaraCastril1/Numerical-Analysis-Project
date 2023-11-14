@@ -11,6 +11,8 @@ function submitForm(event) {
         data[key] = value.toString();
     });
 
+    // Agregar el nombre del método al objeto data
+    data["method"] = "false_position";
     // Realizar una solicitud fetch al servidor Flask
     fetch("http://localhost:5000/procesar", {
         method: "POST",

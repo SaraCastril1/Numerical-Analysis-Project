@@ -10,9 +10,7 @@ function submitForm(event) {
         // Convertir los valores a cadenas
         data[key] = value.toString();
     });
-
-    // Agregar el nombre del método al objeto data
-    data["method"] = "bisection";
+    data["method"] = "secant";
     // Realizar una solicitud fetch al servidor Flask
     fetch("http://localhost:5000/procesar", {
         method: "POST",
@@ -25,8 +23,8 @@ function submitForm(event) {
         .then(data => {
             // Crear y agregar la tabla con los resultados al elemento con el id "false_positions_results"
             var table = createTable(data);
-            document.getElementById("bisection_results").innerHTML = "";
-            document.getElementById("bisection_results").appendChild(table);
+            document.getElementById("secant_method_results").innerHTML = "";
+            document.getElementById("secant_method_results").appendChild(table);
         })
         .catch(error => console.error("Error:", error));
 }
