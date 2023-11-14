@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerical Analysis - Secant Method</title>
+    <link rel="stylesheet" href="../../../static/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/favicon.ico">
+</head>
+
+<body>
+
+    <nav>
+
+        <a class="burger" href="../../home.html">
+            <svg class="icon-bu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path>
+            </svg>
+        </a>
+
+        <img src="../../../img/favicon.ico" alt="logo rubik" width="50" height="50" viewBox="0 0 50 50">
+        <span>NumericalAnalysis</span>
+
+    </nav>
+
+    <main>
+
+        <aside class="methods-aside">
+
+            <h1>Secant Method</h1>
+            <form onsubmit="submitForm(event); return false;" id="secant_method_form">
+
+                <label for="function">Function: </label>
+                <br>
+                <input id="function" name="function" type="text" placeholder="Function" required />
+                <br />
+                <br />
+
+                <label for="initial-guess1">Initial Guess x0: </label>
+                <br>
+                <input type="number" id="initial_guess1" name="initial_guess1" placeholder="Initial guess 1" required />
+                <br />
+                <br>
+
+                <label for="initial-guess2">Initial Guess x1: </label>
+                <br>
+                <input type="number" id="initial_guess2" name="initial_guess2" placeholder="Initial guess 2" required />
+                <br />
+                <br>
+
+                <label for="tolerance">Tolerance: </label>
+                <br>
+                <input type="number" step="any" id="tolerance" name="tolerance" placeholder="Tolerance" required />
+                <br />
+                <br>
+
+                <label for="nitter">Maximum Iterations: </label>
+                <br>
+                <input type="number" id="nitter" name="nitter" placeholder="Maximum iterations" required />
+                <br />
+                <br>
+                <br>
+
+                <input type="submit" id="btn_save" value="Calculate" />
+            </form>
+
+        </aside>
+
+        <section>
+            <div id="secant_method_results">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./secant_method.js"></script>
+
+</body>
+
+</html>
